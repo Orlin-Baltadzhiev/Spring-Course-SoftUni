@@ -1,0 +1,29 @@
+package com.softuni2.springintroex2.Services.models;
+
+import com.softuni2.springintroex2.domain.entities.AgeRestriction;
+
+import java.math.BigDecimal;
+
+public class BookInfo {
+    private String title;
+    private BigDecimal price;
+    private int copies;
+
+    public BookInfo(String title, BigDecimal price, int copies) {
+        this.title = title;
+        this.price = price;
+        this.copies = copies;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public BigDecimal getPrice() {
+        return price;
+    }
+
+    public int getCopies() {
+        return copies;
+    }
+}
